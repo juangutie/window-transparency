@@ -2,11 +2,11 @@
 #InstallMouseHook
 #Persistent
 
-global DEFAULT_TRANSPARENCY := 0.96 * 255  ; default alpha value [0, 255]
+global DEFAULT_TRANSPARENCY := 0.97 * 255  ; default alpha value [0, 255]
 global TRANSPARENCY_DELTA := 0.01 * 255  ; how much to change transparency with each scroll
 global CHECK_INPUT_FREQUENCY := 20  ; milliseconds between each input check
 global RIGHT_CLICK_DELAY := 1000  ; milliseconds before restoring right click
-global FILE_EXPLORER_TIMEOUT := 100  ; maximum milliseconds to wait for file explorer to open
+global FILE_EXPLORER_TIMEOUT := 1000  ; maximum milliseconds to wait for file explorer to open
 
 global SELECT_WINDOW_OPTION := "&Select a Window"
 global HOTKEY_ALT_T_OPTION := "&Alt+T to Toggle Transparency"
