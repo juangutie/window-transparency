@@ -2,7 +2,7 @@
 #InstallMouseHook
 #Persistent
 
-global DEFAULT_TRANSPARENCY := 0.97 * 255  ; default alpha value [0, 255]
+global DEFAULT_TRANSPARENCY := 0.95 * 255  ; default alpha value [0, 255]
 global TRANSPARENCY_DELTA := 0.01 * 255  ; how much to change transparency with each scroll
 global CHECK_INPUT_FREQUENCY := 20  ; milliseconds between each input check
 global RIGHT_CLICK_DELAY := 1000  ; milliseconds before restoring right click
@@ -213,14 +213,14 @@ openFileExplorer() {
     WinGet, initialWindow, ID, A
     Send, #e
 
-    if (initialWindowTitle == "File Explorer")
+    if (initialWindowTitle == "This PC")
     {
         WinWaitNotActive, %initialWindow%,, % FILE_EXPLORER_TIMEOUT/1000
         if (ErrorLevel == 1)
             return
     }
 
-    WinWaitActive, % "File Explorer",, % FILE_EXPLORER_TIMEOUT/1000
+    WinWaitActive, % "This PC",, % FILE_EXPLORER_TIMEOUT/1000
     if (ErrorLevel == 1)
         return
 
