@@ -1,4 +1,5 @@
-﻿#SingleInstance Force
+﻿#Requires AutoHotkey v1.1.33+
+#SingleInstance Force
 #InstallMouseHook
 #Persistent
 
